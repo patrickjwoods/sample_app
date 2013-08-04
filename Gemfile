@@ -32,6 +32,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# make attr_accesible work - http://stackoverflow.com/questions/15520151/rails-4-authentication
+gem 'protected_attributes'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -40,6 +43,9 @@ end
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
-
+group :development do
+	gem 'rspec-rails', '2.0.1'
+	gem 'annotate'
+end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
